@@ -1,0 +1,39 @@
+git init
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+git add file.txt
+git commit -m "example reviews"
+git status
+git log 
+git diff file.txt
+git log --pretty=oneline
+git reset --hard HEAD^  #huidao zhiqian yige banben
+git reset --hard 32352  #huifu weilai de banben
+git reflog   # kan lishi mingling
+git checkout -- file.txt #cancel all revises
+git reset HEAD file.txt  #cancel all revises in storage and return to workplace
+git rm file.txt   #delete some files
+ssh-keygen -t rsa -C "youremail@example.com" #  produce the secret of ssh 
+	# id_rsa is private and id_rsa.pub is public 
+git remote add origin git@server-name:path/repo-name.git;  	  #connected to the git	hub
+git push -u origin master  #first time to push things
+git push origin master     
+git clone git@server-name:path/repo-name.git  #clone something from the github 
+
+git checkout -b dev  #create another branch called dev and convert to it
+==
+git branch dev
+git checkout dev
+
+git branch 
+git merge dev
+git branch -d dev   #delete the branch called dev
+git log --graph --pretty=oneline --abbrev-commit         #watch the situation of merging branch
+git stash
+git stash
+git stash list
+	1.git stash apply (stash@{0})    2. git stash drop
+	1.git stash pop
+git branch -D dev   #delete the branch called dev forcefully
+
+
