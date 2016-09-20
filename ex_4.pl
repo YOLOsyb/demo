@@ -36,6 +36,7 @@ foreach (@_){
 	$sum+=$_;
 }
 my $average=($sum/$count);
+print "The number is larger than average:";
 foreach (@_){
 	if($_>=$average){
 		print "$_\t";
@@ -75,7 +76,7 @@ sub greeting1{
         my $name=shift;
         print "Hi $name!";
         unless( @names){
-                print "@names is alse here!\n";
+                print "You are the first one here!\n";
         }else {
                 print "I have seen : @names!\n";
         }
